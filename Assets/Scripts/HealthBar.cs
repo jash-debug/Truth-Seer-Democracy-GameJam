@@ -7,7 +7,7 @@ public class HealthBar : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float _maxHealth = 100;
-    private float _currentHealth;
+    [SerializeField]private float _currentHealth;
     [SerializeField] private Image _healthBarFill;
     [SerializeField] private TextMeshProUGUI _healthText;
     [SerializeField] float _fillSpeed;
@@ -17,7 +17,7 @@ public class HealthBar : MonoBehaviour
 
     private void Start()
     {
-        _currentHealth = _maxHealth;
+        //_currentHealth = _maxHealth;
         _healthText.text = "Health: " + _currentHealth;
     }
 
